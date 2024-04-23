@@ -1,0 +1,13 @@
+[package]
+name = "explore-parquet-sql-cli"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+datafusion = "37.1"
+tokio = { version = "1.0", features = ["macros", "rt", "rt-multi-thread", "sync"] }
+futures = "0.3"
+dialoguer = { version = "0.11", features = ["completion", "history"] }
+anyhow = "1.0"
